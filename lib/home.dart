@@ -14,7 +14,6 @@ class _HomeState extends State<Home> {
   @override
   String image = "head";
   List<String> images = ["head", "tail"];
-  int rotateCoin = 10;
   double m = 1;
   double p = 0;
   // String state = head;
@@ -30,13 +29,11 @@ class _HomeState extends State<Home> {
           } else {
             image = "head";
           }
-          // rotateCoin--;
         });
       } else {
         setState(() {
           m = 1;
           p = 0;
-          // rotateCoin--;
         });
       }
     });
